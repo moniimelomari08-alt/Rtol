@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RUUL — Streetwear</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#" class="logo">RUUL<span>.</span></a>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="cartBtn" class="icon-btn">
+        Bag <span id="cartCount">0</span>
+      </button>
+
+      <button id="menuBtn" class="menu-btn">☰</button>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+        <p class="eyebrow">RUUL / 001 — NEW DROP</p>
+
+        <h1>
+          WEAR<br>
+          YOUR<br>
+          <span>RULES.</span>
+        </h1>
+
+        <p class="hero-text">
+          Independent streetwear made for those who move different.
+        </p>
+
+        <a href="#shop" class="main-btn">
+          SHOP DROP →
+        </a>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card">
+          <span>R.001</span>
+          <strong>RUUL</strong>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+      <div>
+        RUUL — NO RULES — NEW DROP — RUUL — NO RULES — NEW DROP —
+      </div>
+    </div>
+
+
+    <!-- SHOP -->
+    <section class="shop" id="shop">
+
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">COLLECTION 001</p>
+          <h2>THE DROP</h2>
+        </div>
+
+        <span id="productNumber">04 PRODUCTS</span>
+      </div>
+
+
+      <div id="productsGrid" class="products-grid"></div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+      <div>
+        <p class="eyebrow">ABOUT RUUL</p>
+        <h2>NO RULES.<br>JUST YOU.</h2>
+      </div>
+
+      <p>
+        RUUL is an independent streetwear brand focused on
+        identity, attitude and everyday movement.
+        We don't follow the rules. We create our own.
+      </p>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+
+      <p class="eyebrow">STAY UPDATED</p>
+
+      <h2>JOIN THE RUUL.</h2>
+
+      <form id="newsletterForm">
+        <input
+          type="email"
+          placeholder="YOUR EMAIL"
+          required
+        >
+
+        <button type="submit">JOIN →</button>
+      </form>
+
+    </section>
+
+  </main>
+
+
+  <!-- CART SIDEBAR -->
+  <div id="overlay" class="overlay"></div>
+
+  <aside id="cartPanel" class="cart-panel">
+
+    <div class="cart-head">
+      <h2>YOUR BAG</h2>
+
+      <button id="closeCart" class="close-btn">
+        ×
+      </button>
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-bottom">
+
+      <div class="total">
+        <span>TOTAL</span>
+        <strong id="cartTotal">0 DH</strong>
+      </div>
+
+      <button id="checkoutBtn" class="checkout-btn">
+        CHECKOUT →
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <!-- CHECKOUT MODAL -->
+  <div id="checkoutModal" class="modal">
+
+    <div class="modal-box">
+
+      <button id="closeCheckout" class="close-btn">
+        ×
+      </button>
+
+      <p class="eyebrow">RUUL CHECKOUT</p>
+
+      <h2>YOUR DETAILS</h2>
+
+      <form id="checkoutForm">
+
+        <input
+          type="text"
+          id="customerName"
+          placeholder="FULL NAME"
+          required
+        >
+
+        <input
+          type="tel"
+          id="customerPhone"
+          placeholder="PHONE"
+          required
+        >
+
+        <input
+          type="text"
+          id="customerCity"
+          placeholder="CITY"
+          required
+        >
+
+        <textarea
+          id="customerAddress"
+          placeholder="DELIVERY ADDRESS"
+          required
+        ></textarea>
+
+        <div class="payment-info">
+          PAYMENT METHOD
+          <strong>Cash On Delivery</strong>
+        </div>
+
+        <button class="main-btn full" type="submit">
+          CONFIRM ORDER →
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <!-- ADMIN -->
+  <section class="admin" id="admin">
+
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">ADMIN</p>
+        <h2>PRODUCTS</h2>
+      </div>
+    </div>
+
+    <div class="admin-form">
+
+      <input id="adminName" placeholder="Product name">
+
+      <input id="adminPrice" type="number" placeholder="Price">
+
+      <input id="adminCategory" placeholder="Category">
+
+      <button id="addProduct">
+        ADD PRODUCT
+      </button>
+
+    </div>
+
+    <div id="adminProducts"></div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo">
+      RUUL<span>.</span>
+    </div>
+
+    <p>© 2026 RUUL. ALL RIGHTS RESERVED.</p>
+
+    <div>
+      INSTAGRAM / TIKTOK
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
